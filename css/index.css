@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+.header-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #C6C6C6;
+    padding: 10px;
+}
+.container {
+    max-width: 550px;
+    margin:0 auto;
+}
+#oldgram-logo {
+    width: clamp(110px,15vw,140px);
+}
+
+.post-section {
+    margin-top: 20px;
+}
+
+.post-section-header {
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#user-picture, 
+.poster-image
+{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.poster-info {
+    display: inline-block;
+}
+
+.poster-name {
+    margin: 0;
+    font-weight: 900;
+}
+
+.poster-location {
+    margin: 0;
+    margin-top: 3px;
+}
+
+.post-img {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    height: 375px;
+}
+
+.icons {
+    width: clamp(25px,6%,30px);
+    margin-right: 10px;
+}
+
+.icons:hover, 
+.icons:focus 
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+#post-likes, 
+p .poster-username {
+    font-weight: 700;
+}
+
+.post-section-footer {
+    padding: 10px;
+}
